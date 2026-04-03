@@ -21,7 +21,7 @@ export function editMultiline<T extends object>(value: string, target: ObjectOrT
 
 export function outputMultiline(value: string)
 {
-	return `<span class="multiline" style="white-space: pre-line;">${value}</span>`
+	return (value === '') ? '' : `<span class="multiline" style="white-space: pre-line;">${value}</span>`
 }
 
 export function setMultilineHtmlTransformers<T extends object>(target: ObjectOrType<T>, property: keyof T)
