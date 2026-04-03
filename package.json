@@ -1,0 +1,65 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"dependencies": {
+		"@itrocks/class-type": "latest",
+		"@itrocks/decorator": "latest"
+	},
+	"description": "Provide common string property format decorators and transformers, including email and multiline",
+	"devDependencies": {
+		"typescript": "~5.9"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": {
+		".": {
+			"require": "./cjs/string-formats.js",
+			"types": "./cjs/string-formats.d.ts"
+		},
+		"./transformers": {
+			"require": "./cjs/transformers.js",
+			"types": "./cjs/transformers.d.ts"
+		}
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"cjs/*",
+		"!*.map"
+	],
+	"homepage": "https://it.rocks",
+	"keywords": [
+		"backend",
+		"decorator",
+		"format",
+		"formats",
+		"formatting",
+		"it.rocks",
+		"property",
+		"string",
+		"security",
+		"transformer",
+		"validation",
+		"validator"
+	],
+	"license": "ISC",
+	"name": "@itrocks/string-formats",
+	"optionalDependencies": {
+		"@itrocks/property-view": "latest",
+		"@itrocks/rename": "latest",
+		"@itrocks/transformer": "latest",
+		"@itrocks/translate": "latest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/string-formats.git"
+	},
+	"scripts": {
+		"build": "tsc"
+	},
+	"types": "./cjs/string-formats.d.ts",
+	"version": "0.0.1"
+}
