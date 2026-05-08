@@ -9,25 +9,19 @@
 	},
 	"description": "Provide common string property format decorators and transformers, including email and multiline",
 	"devDependencies": {
-		"typescript": "~5.9"
+		"typescript": "^6.0"
 	},
 	"engines": {
-		"node": ">=18"
+		"node": ">=24"
 	},
 	"exports": {
-		".": {
-			"require": "./cjs/string-formats.js",
-			"types": "./cjs/string-formats.d.ts"
-		},
-		"./transformers": {
-			"require": "./cjs/transformers.js",
-			"types": "./cjs/transformers.d.ts"
-		}
+		".": "./cjs/string-formats.js",
+		"./transformers": "./cjs/transformers.js"
 	},
 	"files": [
 		"LICENSE",
 		"README.md",
-		"cjs/*",
+		"cjs",
 		"!*.map"
 	],
 	"homepage": "https://it.rocks",
@@ -60,6 +54,5 @@
 	"scripts": {
 		"build": "tsc"
 	},
-	"types": "./cjs/string-formats.d.ts",
-	"version": "0.0.2"
+	"version": "0.1.0"
 }
