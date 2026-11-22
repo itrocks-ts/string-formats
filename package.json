@@ -42,10 +42,8 @@
 	"license": "ISC",
 	"name": "@itrocks/string-formats",
 	"optionalDependencies": {
-		"@itrocks/property-view": "latest",
-		"@itrocks/rename": "latest",
-		"@itrocks/transformer": "latest",
-		"@itrocks/translate": "latest"
+		"@itrocks/form-controls": "latest",
+		"@itrocks/transformer": "latest"
 	},
 	"repository": {
 		"type": "git",
@@ -54,5 +52,5 @@
 	"scripts": {
 		"build": "tsc"
 	},
-	"version": "0.1.1"
+	"version": "0.2.0"
 }
